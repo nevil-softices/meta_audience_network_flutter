@@ -11,7 +11,7 @@ import '../constants.dart';
 ///
 /// * [STANDARD] (320 * 50px)
 /// * [LARGE] (320 * 90px)
-/// * [MEDIUM_RECTANGLE] (320 * 250px)
+/// * [MEDIUM_RECTANGLE] (300 * 250px)
 class BannerSize {
   final int width;
   final int height;
@@ -19,7 +19,7 @@ class BannerSize {
   static const BannerSize STANDARD = BannerSize(width: 320, height: 50);
   static const BannerSize LARGE = BannerSize(width: 320, height: 90);
   static const BannerSize MEDIUM_RECTANGLE =
-      BannerSize(width: 320, height: 250);
+      BannerSize(width: 300, height: 250);
 
   const BannerSize({this.width = 320, this.height = 50});
 }
@@ -110,20 +110,15 @@ class _BannerAdState extends State<BannerAd>
       return Container(
         height: containerHeight,
         color: Colors.transparent,
-        child: Container(
-          width: widget.bannerSize.width.toDouble(),
-          child: Center(
-            child: UiKitView(
-              viewType: BANNER_AD_CHANNEL,
-              onPlatformViewCreated: _onBannerAdViewCreated,
-              creationParams: <String, dynamic>{
-                "id": widget.placementId,
-                "width": widget.bannerSize.width,
-                "height": widget.bannerSize.height,
-              },
-              creationParamsCodec: StandardMessageCodec(),
-            ),
-          ),
+        child: UiKitView(
+          viewType: BANNER_AD_CHANNEL,
+          onPlatformViewCreated: _onBannerAdViewCreated,
+          creationParams: <String, dynamic>{
+            "id": widget.placementId,
+            "width": widget.bannerSize.width,
+            "height": widget.bannerSize.height,
+          },
+          creationParamsCodec: StandardMessageCodec(),
         ),
       );
     } else {
