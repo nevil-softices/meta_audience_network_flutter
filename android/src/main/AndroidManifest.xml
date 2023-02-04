@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.dsi.audience_network">
+  package="com.dsi.easy_audience_network">
   <application
         android:hardwareAccelerated="true"/>
 </manifest>

@@ -1,4 +1,4 @@
-group 'com.dsi.audience_network'
+group 'com.dsi.easy_audience_network'
 version '1.0-SNAPSHOT'
 
 buildscript {

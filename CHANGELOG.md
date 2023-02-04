@@ -1,3 +1,8 @@
+## 0.0.6
+
+- update Android & iOS SDK
+- fixes ios banner size
+
 ## 0.0.5
 
 - Update dependencies and fix onError listener

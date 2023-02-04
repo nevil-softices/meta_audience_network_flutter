@@ -1,12 +1,12 @@
 PODS:
-  - audience_network (0.0.1):
-    - FBAudienceNetwork (~> 6.9.0)
+  - easy_audience_network (0.0.6):
+    - FBAudienceNetwork (~> 6.12.0)
     - Flutter
-  - FBAudienceNetwork (6.9.0)
+  - FBAudienceNetwork (6.12.0)
   - Flutter (1.0.0)
 
 DEPENDENCIES:
-  - audience_network (from `.symlinks/plugins/audience_network/ios`)
+  - easy_audience_network (from `.symlinks/plugins/easy_audience_network/ios`)
   - Flutter (from `Flutter`)
 
 SPEC REPOS:
@@ -14,16 +14,16 @@ SPEC REPOS:
     - FBAudienceNetwork
 
 EXTERNAL SOURCES:
-  audience_network:
-    :path: ".symlinks/plugins/audience_network/ios"
+  easy_audience_network:
+    :path: ".symlinks/plugins/easy_audience_network/ios"
   Flutter:
     :path: Flutter
 
 SPEC CHECKSUMS:
-  audience_network: 68de72bbf721fc9a778c9a69605f52db27c6aed5
-  FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
-  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  easy_audience_network: b56708ef1ccc75dbc97d87adae8458493395768e
+  FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

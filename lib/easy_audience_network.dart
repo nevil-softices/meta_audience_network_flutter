@@ -4,15 +4,15 @@
 /// to provide functionality for Flutter applications.
 ///
 /// Currently only Android platform is supported.
-library audience_network;
+library easy_audience_network;
 
 import 'package:flutter/services.dart';
 
 import 'constants.dart';
 
 export 'ad/banner_ad.dart';
-export 'ad/native_ad.dart';
 export 'ad/interstitial_ad.dart';
+export 'ad/native_ad.dart';
 export 'ad/rewarded_ad.dart';
 
 /// All non-widget functions such as initialization, loading interstitial,
@@ -20,7 +20,7 @@ export 'ad/rewarded_ad.dart';
 ///
 /// Initialize the Facebook Audience Network by calling the static [init]
 /// function.
-class AudienceNetwork {
+class EasyAudienceNetwork {
   static const _channel = const MethodChannel(MAIN_CHANNEL);
 
   /// Initializes the Facebook Audience Network. [testingId] can be used to

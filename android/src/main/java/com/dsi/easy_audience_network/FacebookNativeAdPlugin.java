@@ -1,4 +1,4 @@
-package com.dsi.audience_network;
+package com.dsi.easy_audience_network;
 
 import android.content.Context;
 import android.graphics.Color;

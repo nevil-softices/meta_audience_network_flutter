@@ -1,4 +1,4 @@
-package com.dsi.audience_network;
+package com.dsi.easy_audience_network;
 
 import android.app.Activity;
 import android.content.Context;

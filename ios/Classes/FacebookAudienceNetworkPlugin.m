@@ -1,5 +1,5 @@
 #import "FacebookAudienceNetworkPlugin.h"
-#import <audience_network/audience_network-Swift.h>
+#import <easy_audience_network/easy_audience_network-Swift.h>
 // #import "audience_network-Swift.h"
 
 @implementation FacebookAudienceNetworkPlugin

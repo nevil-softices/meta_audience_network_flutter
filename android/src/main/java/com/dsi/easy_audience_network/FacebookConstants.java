@@ -1,4 +1,4 @@
-package com.dsi.audience_network;
+package com.dsi.easy_audience_network;
 
 final class FacebookConstants {
     static final String MAIN_CHANNEL = "fb.audience.network.io";
