@@ -56,7 +56,8 @@ class InterstitialAd {
           case InterstitialAdPlatformInterfaceResult.ERROR:
             final errorCode = args['error_code'];
             final errorMessage = args['error_message'];
-            listener?.onError?.call(errorCode, errorMessage);
+            listener?.onError
+                ?.call(errorCode ?? 1001, errorMessage ?? "No Fill");
             break;
           case InterstitialAdPlatformInterfaceResult.LOADED:
             listener?.onLoaded?.call();

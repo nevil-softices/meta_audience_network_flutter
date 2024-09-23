@@ -58,7 +58,7 @@ class RewardedAd {
           case RewardedAdPlatformInterfaceResult.ERROR:
             final errorCode = args['error_code'];
             final errorMessage = args['error_message'];
-            listener?.onError?.call(errorCode, errorMessage);
+            listener?.onError?.call(errorCode ?? 1001, errorMessage ?? "No Fill");
             break;
           case RewardedAdPlatformInterfaceResult.LOADED:
             listener?.onLoaded?.call();

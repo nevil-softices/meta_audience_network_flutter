@@ -143,7 +143,7 @@ class _BannerAdState extends State<BannerAd>
         case ERROR_METHOD:
           final errorCode = args['error_code'];
           final errorMessage = args['error_message'];
-          widget.listener?.onError?.call(errorCode, errorMessage);
+          widget.listener?.onError?.call(errorCode ?? 1001, errorMessage ?? "No Fill");
           break;
         case LOADED_METHOD:
           setState(() {
